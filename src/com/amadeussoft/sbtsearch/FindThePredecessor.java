@@ -20,11 +20,11 @@ public class FindThePredecessor {
      */
     private static final int[] MANUALLY_ENTERED_ARRAY = new int[]{11, 3, 54, 6, 42, 60, -5, 80, 95, 2, 45, 24, 23, 34, 150, 25};
     private static final int MANUALLY_ENTERED_PASSED_VALUE = 25;
-    private static final int MANUALLY_ENTERED_CORRECT_RESULT = 3;
+    private static final int MANUALLY_ENTERED_CORRECT_RESULT = 24;
 
     public static void main(String[] args) {
         //Please choose the run mode for application
-        RunMode selectedMode = RunMode.MANUAL_TEST_MODE;
+        RunMode selectedMode = RunMode.CONSOLE_MODE;
 
         switch (selectedMode) {
             case CONSOLE_MODE:
