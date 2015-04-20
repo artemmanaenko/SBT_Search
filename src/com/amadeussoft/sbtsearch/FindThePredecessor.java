@@ -3,7 +3,7 @@ package com.amadeussoft.sbtsearch;
 import com.amadeussoft.sbtsearch.managers.AlgorithmTestRunner;
 import com.amadeussoft.sbtsearch.managers.InputHelper;
 import com.amadeussoft.sbtsearch.managers.PredecessorFinder;
-import com.amadeussoft.sbtsearch.model.BST;
+import com.amadeussoft.sbtsearch.model.BinarySearchTree;
 import com.amadeussoft.sbtsearch.model.Node;
 
 /**
@@ -54,7 +54,7 @@ public class FindThePredecessor {
             passedValue = inputHelper.readIntValue();
         }
 
-        BST bst = new BST(values);
+        BinarySearchTree bst = new BinarySearchTree(values);
         PredecessorFinder predecessorFinder = new PredecessorFinder(bst);
         Node predecessorNode = predecessorFinder.findPredecessorNodeForValue(passedValue);
         if (predecessorNode == null) {

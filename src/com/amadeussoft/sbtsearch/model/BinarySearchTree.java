@@ -3,11 +3,11 @@ package com.amadeussoft.sbtsearch.model;
 /**
  * Created by Artem on 20.04.2015.
  */
-public class BST {
+public class BinarySearchTree {
 
     private Node root;
 
-    public BST(int[] valuesArray) {
+    public BinarySearchTree(int[] valuesArray) {
         if (valuesArray != null && valuesArray.length > 0) {
             root = new Node(valuesArray[0]);
             if (valuesArray.length > 1) {

@@ -1,6 +1,6 @@
 package com.amadeussoft.sbtsearch.managers;
 
-import com.amadeussoft.sbtsearch.model.BST;
+import com.amadeussoft.sbtsearch.model.BinarySearchTree;
 import com.amadeussoft.sbtsearch.model.Node;
 
 import java.util.Arrays;
@@ -69,7 +69,7 @@ public class AlgorithmTestRunner {
     public void makeCorrectTest(int[] values, int passedValue, int correctPredecessor) {
         System.out.print("values=" + Arrays.toString(values) + "\npassedValue=" + passedValue + " expectedPredecessor=" + correctPredecessor);
 
-        BST tree = new BST(values);
+        BinarySearchTree tree = new BinarySearchTree(values);
         PredecessorFinder predecessorFinder = new PredecessorFinder(tree);
         Node predecessorNode = predecessorFinder.findPredecessorNodeForValue(passedValue);
         if(predecessorNode != null){
@@ -86,7 +86,7 @@ public class AlgorithmTestRunner {
     public void makeNotFoundTest(int[] values, int passedValue) {
         System.out.print("values=" + Arrays.toString(values) + " passedValue=" + passedValue);
 
-        BST tree = new BST(values);
+        BinarySearchTree tree = new BinarySearchTree(values);
         PredecessorFinder predecessorFinder = new PredecessorFinder(tree);
         Node predecessorNode = predecessorFinder.findPredecessorNodeForValue(passedValue);
         boolean isCorrect = (predecessorNode == null);
@@ -96,7 +96,7 @@ public class AlgorithmTestRunner {
     public void makeNotCorrectTest(int[] values, int passedValue, int notcorrectPredecessor) {
         System.out.print("values=" + Arrays.toString(values) + " passedValue=" + passedValue + " expectedPredecessor=" + notcorrectPredecessor);
 
-        BST tree = new BST(values);
+        BinarySearchTree tree = new BinarySearchTree(values);
         PredecessorFinder predecessorFinder = new PredecessorFinder(tree);
 
         Node predecessorNode = predecessorFinder.findPredecessorNodeForValue(passedValue);

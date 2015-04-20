@@ -1,6 +1,6 @@
 package com.amadeussoft.sbtsearch.managers;
 
-import com.amadeussoft.sbtsearch.model.BST;
+import com.amadeussoft.sbtsearch.model.BinarySearchTree;
 import com.amadeussoft.sbtsearch.model.Node;
 
 /**
@@ -8,9 +8,9 @@ import com.amadeussoft.sbtsearch.model.Node;
  */
 public class PredecessorFinder {
 
-    private BST tree;
+    private BinarySearchTree tree;
 
-    public PredecessorFinder(BST tree) {
+    public PredecessorFinder(BinarySearchTree tree) {
         this.tree = tree;
     }
 
