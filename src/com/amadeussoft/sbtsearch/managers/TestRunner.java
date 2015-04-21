@@ -8,7 +8,7 @@ import java.util.Arrays;
 /**
  * Created by Artem on 20.04.2015.
  */
-public class AlgorithmTestRunner {
+public class TestRunner {
 
     public void runAutoTests() {
         drawDashLine();
@@ -66,7 +66,7 @@ public class AlgorithmTestRunner {
         makeCorrectTest(values, passedValue, correctPredecessor);
     }
 
-    public void makeCorrectTest(int[] values, int passedValue, int correctPredecessor) {
+    private void makeCorrectTest(int[] values, int passedValue, int correctPredecessor) {
         System.out.print("values=" + Arrays.toString(values) + "\npassedValue=" + passedValue + " expectedPredecessor=" + correctPredecessor);
 
         BinarySearchTree tree = new BinarySearchTree(values);
@@ -83,7 +83,7 @@ public class AlgorithmTestRunner {
         }
     }
 
-    public void makeNotFoundTest(int[] values, int passedValue) {
+    private void makeNotFoundTest(int[] values, int passedValue) {
         System.out.print("values=" + Arrays.toString(values) + " passedValue=" + passedValue);
 
         BinarySearchTree tree = new BinarySearchTree(values);
@@ -93,7 +93,7 @@ public class AlgorithmTestRunner {
         System.out.print("\nTest passed:" + isCorrect);
     }
 
-    public void makeNotCorrectTest(int[] values, int passedValue, int notcorrectPredecessor) {
+    private void makeNotCorrectTest(int[] values, int passedValue, int notcorrectPredecessor) {
         System.out.print("values=" + Arrays.toString(values) + " passedValue=" + passedValue + " expectedPredecessor=" + notcorrectPredecessor);
 
         BinarySearchTree tree = new BinarySearchTree(values);

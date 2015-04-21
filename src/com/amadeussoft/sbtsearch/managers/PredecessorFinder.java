@@ -23,7 +23,9 @@ public class PredecessorFinder {
                 //probably predecessor is located in left node cause there are children less then enteredValue
                 if (leftNode != null) {
                     Node maxChildFromNode = getMaximumChildFromNode(leftNode);
-                    if (maxChildFromNode == null)
+                    if (maxChildFromNode != null)
+                        predecessor = maxChildFromNode;
+                    else
                         predecessor = leftNode;
                 }
                 //otherwise stay predecessor unchanged
