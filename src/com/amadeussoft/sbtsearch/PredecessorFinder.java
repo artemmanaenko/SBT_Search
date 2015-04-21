@@ -1,4 +1,4 @@
-package com.amadeussoft.sbtsearch.managers;
+package com.amadeussoft.sbtsearch;
 
 import com.amadeussoft.sbtsearch.model.BinarySearchTree;
 import com.amadeussoft.sbtsearch.model.Node;

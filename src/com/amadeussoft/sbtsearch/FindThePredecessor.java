@@ -1,7 +1,5 @@
 package com.amadeussoft.sbtsearch;
 
-import com.amadeussoft.sbtsearch.managers.TestRunner;
-import com.amadeussoft.sbtsearch.managers.PredecessorFinder;
 import com.amadeussoft.sbtsearch.model.BinarySearchTree;
 import com.amadeussoft.sbtsearch.model.Node;
 

@@ -1,5 +1,7 @@
 package com.amadeussoft.sbtsearch.model;
 
+import com.amadeussoft.sbtsearch.model.Node;
+
 /**
  * Created by Artem on 20.04.2015.
  */
